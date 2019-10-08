@@ -3,7 +3,7 @@
     <div id="slogan" class="text-center">
       <h1>Domains Generator</h1>
       <br/>
-      <h6 class="text-secondary">Gerador de nomes utilizando Vue.js e Node.</h6>
+      <h6 class="text-secondary">Generate of Domains - Vuejs e Node.</h6>
     </div>
 
     <div id="main">
