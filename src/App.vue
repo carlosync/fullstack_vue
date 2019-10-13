@@ -3,7 +3,7 @@
     <div id="slogan" class="text-center">
       <h1>Domains Generator</h1>
       <br/>
-      <h6 class="text-secondary">Generate of Domains - Vuejs e Node.</h6>
+      <h6>Generate of Domains - Vuejs e Node.</h6>
     </div>
 
     <div id="main">
@@ -20,7 +20,9 @@
                           {{ prefix }}
                       </div>
                       <div class="col-md text-right">
-                          <button class="btn btn-danger" v-on:click="deletePrefix(prefix)"><span class="fa fa-trash"></span></button>
+                          <button class="btn btn-info" title="Remover" v-on:click="deletePrefix(prefix)">
+                            <span class="fa fa-trash"></span>
+                          </button>
                       </div>
                     </div>
                   </li>
@@ -31,7 +33,8 @@
                     placeholder="Digite o prefix"/>
                   <div class="input-group-append">
                     <button class="btn btn-info" v-on:click="addPrefix(prefix)">
-                      <span class="fa fa-plus"></span></button>
+                      <span class="fa fa-plus"></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -48,7 +51,7 @@
                         {{ sufix }}
                       </div>
                       <div class="col-md text-right">
-                          <button class="btn btn-danger" v-on:click="deleteSufix(sufix)">
+                          <button class="btn btn-info" title="Remover" v-on:click="deleteSufix(sufix)">
                             <span class="fa fa-trash"></span></button>
                       </div>
                     </div>     
@@ -59,7 +62,9 @@
                   <input type="text" class="form-control" v-model="sufix" v-on:keyup.enter="addSufix(sufix)" 
                     placeholder="Digite o sufix"/>
                   <div class="input-group-append">
-                    <button class="btn btn-info" v-on:click="addSufix(sufix)"><span class="fa fa-plus"></span></button>
+                    <button class="btn btn-info" v-on:click="addSufix(sufix)">
+                      <span class="fa fa-plus"></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -147,9 +152,18 @@ export default {
 </script>
 
 <style>
+
+html, body{
+  font-size: 14px;
+}
+
 #slogan{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color:#17a2b8; /*  #0082C7; #17a2b8*/
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  /* margin-bottom: 40px; */
+  color: #f1f1f1;
 }
 
 #main{
