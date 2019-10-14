@@ -2,7 +2,6 @@
   <div>
     <div id="slogan" class="text-center">
       <h1>Domains Generator</h1>
-      <br/>
       <h6>Generate of Domains - Vuejs e Node.</h6>
     </div>
 
@@ -10,7 +9,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md">
-            <h5>Prefixes <span class="badge badge-info">{{ prefixes.length }}</span></h5>
+            <h5>Prefixos <span class="badge badge-info">{{ prefixes.length }}</span></h5>
             <div class="card">
               <div class="card-body">
                 <ul class="list-group">
@@ -41,7 +40,7 @@
             </div>
           </div>
           <div class="col-md">
-            <h5>Sufixes <span class="badge badge-info">{{ sufixes.length }}</span></h5>
+            <h5>Sufixos <span class="badge badge-info">{{ sufixes.length }}</span></h5>
             <div class="card">
               <div class="card-body">
                 <ul class="list-group">
@@ -72,7 +71,7 @@
           </div>
         </div>
         <br/>
-        <h5>Domains <span class="badge badge-info">{{ domains.length }}</span></h5>
+        <h5>Domínios <span class="badge badge-info">{{ domains.length }}</span></h5>
         <div class="card">
             <div class="card-body">
               <ul class="list-group">
@@ -108,7 +107,7 @@ export default {
       prefix: "",
       sufix: "",
       prefixes: ['Air', 'Jet', 'Flight'],
-      sufixes:  ['Hub', 'Station', 'Mart']
+      sufixes:  ['Hub', 'Station', 'Mart'],
     };
   },
 
@@ -158,11 +157,10 @@ html, body{
 }
 
 #slogan{
-  background-color:#17a2b8; /*  #0082C7; #17a2b8*/
+  background-color:#17a2b8;
   height: 100px;
   padding-top: 10px;
   padding-bottom: 8px;
-  /* margin-bottom: 40px; */
   color: #f1f1f1;
 }
 
